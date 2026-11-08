@@ -1,0 +1,13 @@
+{
+  "name": "Bring Back Google Maps Button",
+  "description": "Bring back the google maps button at the top of the page.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://www.google.com/*"],
+      "run_at": "document_start"
+    }
+  ]
+}
